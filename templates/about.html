@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block pagecontent %}
+    <title>About us | Fintrack Company Limited</title>
+    <link rel="icon" type="image/png" href="/static/images/logo.png">
+</head>
+<body>
+   <div class="about_container">
+        <div class="about_content">
+            <ul>
+                {% include 'nav.html' %}
+            </ul>
+            <br><br><br>
+            <h1 class="about">
+                About Us
+            </h1><br><br>
+            <p class="about_content">
+                Fintrack company Limited, LP (FCL) is a Fortune 100 Best company to work for headquartered in
+                Los Angeles, California. We partner with colleges, high schools and service organizations to engage their 
+                alumni and members. We receive calls from alumni/members to capture their personal stories for 
+                the Oral History Projects, collect data to update directories, and sell published books along with 
+                alumni merchandise. Our purpose is to capture, curate, and preserve the world's stories. Join us 
+                and work with people who like to have fun and celebrate our unique culture! <br><br><br>
+            </p>
+            <p>How we differ from other Companies:<hr id="fhr"/></p><br>
+            <p>
+                Our Culture! We are characterized by a vibrant atmosphere of joy and gratitude. It fosters an 
+                environment where associates are encouraged to grow and learn continuously, with a strong 
+                emphasis on recognition for their contributions. We live and breathe our five core values: Pursue 
+                Excellence Purposefully, Act with Integrity, Innovate a Culture of Fun & Relationships, Unlock 
+                Human Potential, and Lead with a Servant’s Heart. We believe in promoting within!
+            </p><br>
+            <p>Learn more about Fintrack company Limited:<hr id="shr" /></p><br>
+            <p>Fintrack Company Limited is firmly committed to the principle of equal employment opportunity. Fintrack Company Limited offers employment 
+                opportunities without regard to race, color, sex, age, religion, national origin, disability, U.S. 
+                military, and or other prohibited bases of discrimination, both state and local. All aspects of the 
+                employment relationship (including recruiting, hiring, training, working conditions, compensation, 
+                promotion, discipline, and termination) are subject to this policy. Candidates must pass a pre-employment 
+                background check.
+            </p><br><br><br><br><br><br><br><br>
+            <footer>
+                <address>
+                    <h4>Address</h4>
+                    <h5>Fintrack company Limited</h5>
+                    Los Angeles, California
+                    USA
+
+
+                    <p><b>Industry:</b></p>
+                    <div>Business</div>
+                </address> <br><br>
+
+                Fintrack company Limited, Inc. &copy;
+                <span name="ChangeYear">
+                    {% for ChangeYear in ChangeYear %} 
+                    <span value="{{ChangeYear}}">
+                        {{ChangeYear}}
+                    </span>
+                    {% endfor %}
+                </span>
+                 All Rights Reserved Worldwide
+            </footer>
+
+        </div>
+
+   </div> 
+</body>
+{% endblock %}
+</html>

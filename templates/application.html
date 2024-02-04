@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block pagecontent %}
+    <title>Application | Apply For a position</title>
+    <link rel="icon" type="image/png" href="/static/images/logo.png">
+</head>
+<body>
+    <div class="application_container">
+        <span>
+            {% include 'nav.html' %}
+        </span><br><br><br>
+
+        <h3>Fill The Application Letter To Apply!</h3><br /><br />
+
+        <form action="{% url 'application' %}" method="POST" enctype="multipart/form-data">
+            <table>
+            {% csrf_token %}
+            {{ form.as_table }}
+            </table>
+            <button type="submit", id="submit">Submit</button>
+        </form> <br><br>
+    </div>
+</body>
+{% endblock %}
+</html>

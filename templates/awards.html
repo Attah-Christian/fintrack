@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block pagecontent %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards | Recognition - Fintrack</title>
+    <link rel="icon" type="image/png" href="/static/images/logo.png">
+</head>
+<body>
+    <div class="award_container">
+        <div class="award_content">
+            <ul>
+                {% include 'nav.html' %}
+            </ul>
+            <br><br><br>
+            <h2>Awards and Recognition:</h2><br><br>
+            <h3>Los Angeles:</h3>
+            <div class="awardtxt">
+                <div>- Great Place to Work: (2 consecutive years)</div>
+                <div>- Best Companies to Work for in Los Angeles (6 consecutive years)</div>
+                <div>- Top 100 Places to Work: California Morning News (7 consecutive years)</div>
+                <div>- Los Angeles 100: SMU Caruth Inst for Entrepreneurship (3 consecutive years)</div>
+                <div>- Top 100 Places to Work: San Antonio Express-News (2 consecutive years)</div>
+                <div>- San Antonio Business Journal: Best Places to Work (3 consecutive years)</div> <br>
+            </div>
+            <h3>Virginia:</h3>
+            <div class="awardtxt">
+                <div>- Top 100 Places to Work: Inside Business, The Hampton Roads Business Journal (2 consecutive years)</div>
+                <div>- Virginia Business: Best Places to Work (3 consecutive years)</div><br>
+            </div>
+            <h3>Arkansas:</h3>
+            <div class="awardtxt">
+                <div>- Arkansas Business: Best Places to Work (2 consecutive years)</div><br>
+            </div>
+            <h3>National:</h3>
+            <div class="awardtxt">
+                <div>- Intl. Customer Management Institute (ICMI) - 2021</div>
+                <div>- Top Workplaces 2021, 2022 - received 7 Culture Excellence Awards</div>
+                <div>- Inc.5000 Fastest Growing Companies in America - 2020 with a growth rate of 102.48%, putting us in rarefied company with organizations such as Microsoft, Timberland, Vizio, Intuit, Chobani, Oracle, and Zappos.com</div><br>    
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

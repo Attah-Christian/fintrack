@@ -1,0 +1,271 @@
+
+
+/* about */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.about_container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/static/images/about.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 5%;
+    text-align: justify;
+}
+#fhr {
+    width: 242px;
+}
+#shr {
+    width: 287px;
+}
+
+/* award */
+
+.award_container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/static/images/awards.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 5%;
+    text-align: justify;
+}
+.awardtxt {
+    margin-left: 10px;
+}
+
+
+/* home */
+.home_container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/static/images/fintrack.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 5%;
+    text-align: justify;
+}
+
+.home_content {
+    margin-top: 14%;
+    color: #fff;
+    max-width: 620px;
+}
+.home_content h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px 0;
+}
+
+/* nav */
+.nav-container {
+    width: 100%;
+    color: #fff;
+    text-align: justify;
+    border-top: 10px;
+    align-items: start;
+   
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    
+}
+
+.toggle-btn {
+    cursor: pointer;
+    display: none;
+}
+.compname {
+    color: #fff;
+}
+.compname:hover {
+    color: orange;
+}
+.action_btn {
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+.action_btn:active {
+    scale: 0.95;
+}
+div a {
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    align-items: center;
+}
+
+
+.logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* vacancy */
+
+.vacancy_container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/static/images/vacancy.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 5%;
+    text-align: justify;
+}
+.vacancytxt {
+    margin-left: 10px;
+}
+ul {
+    margin-left: 20px;
+}
+input {
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    height: 25px;
+}
+button {
+    background-color: rgb(14, 237, 14);
+    width: 335px;
+    height: 25px;
+}
+
+
+/* value */
+
+
+.value_container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/static/images/value.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 5%;
+    text-align: justify;
+}
+.value_ul{
+    margin-left: 20px;
+}
+hr {
+    width: 170px;
+}
+.application_container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/static/images/application.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 5%;
+    text-align: justify;
+}
+
+.drop_down {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.drop_down.open {
+    height: 380px;
+}
+.drop_down li a{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop_down li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1024px) {
+    .nav-ul {
+        display: none;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    
+    .drop_down {
+        display: block;
+    }
+    .compname:hover {
+        color: orange;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-ul {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+    .drop_down {
+        display: block;
+    }
+    .compname:hover {
+        color: orange;
+    }
+}
+
+@media (max-width: 576px) {
+    .drop_down {
+        left: 2rem;
+        width: unset;
+    }
+    .compname:hover {
+        color: orange;
+    }
+}

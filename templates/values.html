@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pagecontent %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Core Values | Fintrack Company values</title>
+    <link rel="icon" type="image/png" href="/static/images/logo.png">
+</head>
+<body>
+    <div class="value_container">
+        <div class="include">
+            {% include 'nav.html' %}
+        </div>
+        <br><br><br>
+        <div>
+            <h2>Our Core Values</h2>
+            <hr /><br />
+            <h3>Inclusion:</h3>
+            <ul class="value_ul">
+                <li>We have a culture of warmth and belonging, where everyone is very welcome.</li>
+            </ul><br>
+            <h3>Diversity:</h3>
+            <ul class="value_ul">
+                <li>We know it takes people with different ideas, strengths, interests and cultural background.</li>
+            </ul><br>
+            <h3>Integrity:</h3>
+            <ul class="value_ul">
+                <li>We strive to show deep respect for human beings inside and outside our company.</li>
+            </ul><br>
+            <h3>Sustainability:</h3>
+            <ul class="value_ul">
+                <li>We support sustainable and safe methods of production that reduce environmental degradation.</li>
+            </ul><br>
+            <h3>Quality:</h3>
+            <ul class="value_ul">
+                <li>What we do, we do well! Delivering our very best in all we do, holding ourselves accountable for results.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+{% endblock %}
+</html>
+
