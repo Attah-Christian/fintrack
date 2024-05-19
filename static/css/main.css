@@ -207,12 +207,14 @@ hr {
     top: 60px;
     width: 300px;
     height: 0;
-    background: rgb(255, 255, 255, 0.1);
+    /* background: rgb(255, 255, 255, 0.1); */
+    background: rgba(11, 100, 209, 0.787);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .drop_down.open {
     height: 380px;
 }
